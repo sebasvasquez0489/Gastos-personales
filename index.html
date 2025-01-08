@@ -3,11 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="pesos1.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Gastos personales</title>
 </head>
 <body>
+    <h1>GASTOS PERSONALES 2025</h1>
+    <main>
+      <label for="usuario">Usuario</label>
+      <select name="usuario" id="">
+        <!-- selected hidden se utoliza para que solo muestres las opciones a selecciona -->
+        <option selected hidden>Seleccionar</option>
+        <option value="Sebastian">Sebastian</option>
+        <option value="Diana">Diana</option>
+      </select>
   
+      <form action="">
+        <label for="nombre">Nombre del gasto</label>
+        <input type="text" name="nombre" placeholder="Ingrese Gasto">
+  
+        <label for="valor">Valor de gasto</label>
+        <input type="text" name="valor" placeholder="Ingrese Valor">
+  
+        <label for="fecha">Fecha de gasto</label>
+        <input type="date" name="fecha">
+  
+        <button>Añadir</button>
+      </form>
+    </main>
 
 
   <script src="script.js"></script>
